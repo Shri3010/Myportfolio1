@@ -194,22 +194,23 @@ body {
 }
 
 .sub-title{
-    padding-bottom: 70px;
+    /* padding-bottom: 70px; */
     text-align: center;
     font-size: 60px;
 }
 .sub-title span{
-    padding: 90px;
+    padding: 20px;
     color: #0ef;
 }
 .container{
     padding: 90px;
+    width: 100vw;
  
 }
 .services-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
-    grid-gap:40px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 40px;
     margin-top: 50px;
 }
 .services-list div{
@@ -234,6 +235,42 @@ body {
     margin-bottom: 15px;
 }
 .services-list div a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.skill-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.skill-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+   
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+                1px 1px 40px #0053b8f7
+
+}
+.skill-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.skill-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.skill div a{
     text-decoration: none;
     color: #000000;
     font-size: 12px;
@@ -269,11 +306,12 @@ section{
     display:flex;
     flex-wrap: wrap;
 }
-.container1{
-    width: 600px;
-    height: 500px;
+.container2{
+    width: 100vw;
+    height: auto;
     padding: 75px 90px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
+
 }
 .heading1{
     text-align: center;
@@ -560,20 +598,25 @@ section{
 
 }
 .main-text{
-    padding-top: 130px;
     margin-top: 200px;
+    width: 100vw;
+    padding: 50px;
+    margin-bottom: 13em;
 }
 .main-text h2{
     font-size: 60px;
     line-height: 1;
     text-align: center;
+    padding-bottom: 75px;
 }
 .main-text h2 span{
     color: #0ef;
 }
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(20px, auto));
+    margin-top: 25px;
+    gap: 50px;
 
 }
 .row{
@@ -583,7 +626,8 @@ section{
     cursor: pointer;
 }
 .row img{
-    width: 100%;
+    width: 50vw;
+    height: 65vh;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
@@ -644,9 +688,13 @@ section{
     margin-top: 130px;
 }
 .contact-text h2{
-    font-size: 90px;
+    font-size: 45px;
     line-height: 1;
     text-align: center;
+}
+.contact-text{
+    width: 31vw;
+    padding: 30px;
 }
 .contact-text h2 span{
     color: #0ef;
@@ -709,6 +757,14 @@ section{
     box-shadow: 0 0 20px #0ef;
 }
 .contact-form form{
+    position: relative;
+    margin-left: 50px;
+}
+.contact-form{
+    width: 60vw;
+    /* padding-left: 100px; */
+    display: flex;
+    left: 12vw;
     position: relative;
 }
 .contact-form form input, form textarea{
