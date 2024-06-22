@@ -13,7 +13,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     const message = document.getElementById('message').value;
     console.log(email + message);
 
-    const response = await fetch('https://eykrj28u10.execute-api.us-east-1.amazonaws.com/prod', {
+    const response = await fetch('https://muoggfpsda4xcj4i6fzsjmy7ie0bhknq.lambda-url.ap-south-1.on.aws/', {
         method: 'POST',
         headers: {
             "Access-Control-Allow-Headers" : "Content-Type",
