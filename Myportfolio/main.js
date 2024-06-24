@@ -13,20 +13,23 @@ document.getElementById('contactForm').addEventListener('submit', async function
     const message = document.getElementById('message').value;
     console.log(email + message);
 
-    const response = await fetch('https://muoggfpsda4xcj4i6fzsjmy7ie0bhknq.lambda-url.ap-south-1.on.aws/', {
-        method: 'POST',
-        headers: {
-            "Access-Control-Allow-Headers" : "Content-Type",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, message })
-    });
+    try {
+        const response = await fetch('https://eykrj28u10.execute-api.us-east-1.amazonaws.com/prod', {
+        
 
-    if (response.ok) {
-        console.log('Message sent successfully!');
-    } else {
-        console.log('Failed to send message.');
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email, message })
+        });
+
+        if (response.ok) {
+            console.log('Message sent successfully!');
+        } else {
+            console.log('Failed to send message.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
     }
 });
