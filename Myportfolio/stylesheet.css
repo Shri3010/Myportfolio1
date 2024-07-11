@@ -663,6 +663,18 @@ section{
 .path-2{animation: animate-path2 1s 1s linear forwards}
 .path-3{animation: animate-path3 1s 1s linear forwards}
 .path-4{animation: animate-path4 1s 1s linear forwards}
+.success-message {
+    display: flex;
+    color: green;
+    margin-top: 20px;
+}
+.logos{
+    width:100px;
+    height:100px;
+    margin-bottom: 5px;
+    margin-left: 10vh;
+ 
+}
 
 @keyframes animate-path1{
     100%{
@@ -803,8 +815,8 @@ section{
     text-align: center;
 }
 .contact-text {
-    width: 100vw;
-    /* width: 10vw; */
+    /* width: 100vw; */
+    width: 20vw;
     /* padding: 3vh; */
 }
 .contact-text h2 span{
@@ -853,7 +865,7 @@ section{
     background: transparent;
     /* border: 0.2vh solid #0ef; */
     border-radius: 50%;
-    font-size: 2vh;
+    font-size: 25px;
     color: #0ef;
     text-decoration: none;
     margin: 3vh 1.5vh 3vh 0;
@@ -871,13 +883,12 @@ section{
     position: relative;
     margin-left: 5vw;
 }
-.contact-form{
+/* .contact-form{
     width: 60vw;
-    /* padding-left: 100px; */
     display: flex;
     left: 12vw;
     position: relative;
-}
+} */
 .contact-form form input, form textarea{
     border: none;
     outline: none;
@@ -1151,9 +1162,11 @@ section{
 .contact-heading{
     display:flex;
 }
+
 .contact-text {
     /* width: 10vw; */
     padding: 3vh;
+    width: 100vw;
 }
 /* section {
     display: block;
@@ -1210,6 +1223,10 @@ section{
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
+.contact-icons i{
+  
+    margin: 2vh;
+}
 .contact-form {
     width: 90vw;
     /* padding-left: 100px; */
@@ -1232,6 +1249,12 @@ section{
     height: auto;
     padding: 5vh;
     /* margin-left: 120px; */
+}
+.logos {
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 50px;
+    height: 50px;
 }
 }
     
