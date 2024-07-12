@@ -55,7 +55,7 @@ body {
     background-position: center;
     display: flex;
     align-items: center;
-    padding: 7vh 10% 0;
+    padding: 7vh 1;
 }
 .home-content {
     max-width: 60vh;
