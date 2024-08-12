@@ -824,12 +824,13 @@ section{
     height: 100%;
 }
 .contact{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
     align-items: center;
-    gap: 3rem;
-    padding-left: 3vw;
+    /* gap: 3rem;
+    padding-left: 3vw; */
     margin-top: 13vh;
+    flex-direction: row;
 }
 .contact-text h2{
     font-size: 4.5vh;
@@ -838,7 +839,7 @@ section{
 }
 .contact-text {
     /* width: 100vw; */
-    width: 20vw;
+    width: 40vw;
     /* padding: 3vh; */
 }
 .contact-text h2 span{
@@ -901,10 +902,10 @@ section{
     color: #000;
     box-shadow: 0 0 2vh #0ef;
 }
-.contact-form form{
+/* .contact-form form{
     position: relative;
     margin-left: 5vw;
-}
+} */
 /* .contact-form{
     width: 60vw;
     display: flex;
@@ -914,7 +915,7 @@ section{
 .contact-form form input, form textarea{
     border: none;
     outline: none;
-    width: 90%;
+    width: 50vw;
     padding: 1.8vh;
     background: #555557;
     color: #000;
@@ -922,6 +923,7 @@ section{
     font-weight: 600;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
+    display: block;
 }
 .contact-form textarea{
     resize: none;
@@ -955,6 +957,9 @@ section{
     background: rgb(7, 85, 91);
     font-weight: 300;
     margin-top: 7vh;
+}
+.skill-list :hover {
+    transform: translateY(-1vh);
 }
 .top{
     position: fixed;
@@ -1086,6 +1091,7 @@ section{
     margin-top: 5vh;
     /* align-content: space-around; */
 }
+
 .sub-title {
     padding-bottom: 50px;
     text-align: center;
@@ -1169,11 +1175,11 @@ section{
     line-height: 1;
     text-align: center;
 }
-.contact-form form {
+/* .contact-form form {
     position: relative;
-    margin-left: 10vw;
+    margin-left: 10vw; 
     padding-top: 100px;
-}
+} */
 .contact-text h2 {
     position: relative;
     left: 30vw;
@@ -1218,7 +1224,7 @@ section{
 .contact-form form input, form textarea {
     border: none;
     outline: none;
-    width: 100%;
+    /* width: 100%; */
     padding: 1.8vh;
     background: #555557;
     color: #000;
@@ -1250,11 +1256,12 @@ section{
     margin: 2vh;
 }
 .contact-form {
-    width: 90vw;
+    width: 60vw;
+    max-width: 60vw;
     /* padding-left: 100px; */
     display: flex;
     /* left: 12vw; */
-    position:fixed;
+    /* position:fixed; */
     left:0;
 }
 .about-text h4{
